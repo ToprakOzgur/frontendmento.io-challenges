@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Social Media Dashboard</h1>
+
+      <div>
+        <p>Dark Mode</p>
+        <label class="header__switch">
+          <input id="slider" type="checkbox" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <p class="header__totalFollowers">Total Followers: 23,004</p>
+    </header>
+    <div class="top-bg"></div>
+    <main>
+      <div class="followers">
+        <!-- single social media card -->
+        <div class="followers__card facebook">
+          <div class="followers__card__gradient"></div>
+          <div class="followers__card__user">
+            <img class="icon" src="./images/icon-facebook.svg" alt="facebook" />
+            <p class="username">@nathanf</p>
+          </div>
+          <h2>1987</h2>
+          <p class="followers__card__title">Followers</p>
+          <p class="followers__card__change increase">12 Today</p>
+        </div>
+        <!-- end single social media card -->
+
+        <!-- single social media card -->
+        <div class="followers__card twitter">
+          <div class="followers__card__gradient"></div>
+          <div class="followers__card__user">
+            <img class="icon" src="./images/icon-twitter.svg" alt="twitter" />
+            <p class="username">@nathanf</p>
+          </div>
+          <h2>1044</h2>
+          <p class="followers__card__title">Followers</p>
+          <p class="followers__card__change increase">99 Today</p>
+        </div>
+        <!-- end single social media card -->
+
+        <!-- single social media card -->
+        <div class="followers__card instagram">
+          <div class="followers__card__gradient"></div>
+          <div class="followers__card__user">
+            <img
+              class="icon"
+              src="./images/icon-instagram.svg"
+              alt="instagram"
+            />
+            <p class="username">@realnathanf</p>
+          </div>
+          <h2>11k</h2>
+          <p class="followers__card__title">Followers</p>
+          <p class="followers__card__change increase">1099 Today</p>
+        </div>
+        <!-- end single social media card -->
+
+        <!-- single social media card -->
+        <div class="followers__card youtube">
+          <div class="followers__card__gradient"></div>
+          <div class="followers__card__user">
+            <img class="icon" src="./images/icon-youtube.svg" alt="youtube" />
+            <p class="username">@Nathan F.</p>
+          </div>
+          <h2>8239</h2>
+          <p class="followers__card__title">Followers</p>
+          <p class="followers__card__change decrease">144 Today</p>
+        </div>
+        <!-- end single social media card -->
+      </div>
+      <section class="today">
+        <h2 class="today__title">Overview - Today</h2>
+
+        <div class="today-card-wrapper">
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Page Views</h6>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+            <p class="today__detailsCard__count">87</p>
+            <p class="today__detailsCard__change increase">3%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Likes</h6>
+            <img src="./images/icon-facebook.svg" alt="facebook" />
+            <p class="today__detailsCard__count">52</p>
+            <p class="today__detailsCard__change decrease">2%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Likes</h6>
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+            <p class="today__detailsCard__count">5462</p>
+            <p class="today__detailsCard__change increase">2257%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Profile Views</h6>
+            <img src="./images/icon-instagram.svg" alt="instagram" />
+            <p class="today__detailsCard__count">52k</p>
+            <p class="today__detailsCard__change increase">1375%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Retweets</h6>
+            <img src="./images/icon-twitter.svg" alt="twitter" />
+            <p class="today__detailsCard__count">117</p>
+            <p class="today__detailsCard__change increase">303%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Likes</h6>
+            <img src="./images/icon-twitter.svg" alt="twitter" />
+            <p class="today__detailsCard__count">507</p>
+            <p class="today__detailsCard__change increase">553%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Likes</h6>
+            <img src="./images/icon-facebook.svg" alt="youtube" />
+            <p class="today__detailsCard__count">107</p>
+            <p class="today__detailsCard__change decrease">19%</p>
+          </div>
+          <!-- end single details card -->
+
+          <!-- single details card -->
+          <div class="today__detailsCard">
+            <h6 class="today__detailsCard__title">Total Views</h6>
+            <img src="./images/icon-facebook.svg" alt="youtube" />
+            <p class="today__detailsCard__count">1407</p>
+            <p class="today__detailsCard__change decrease">12%</p>
+          </div>
+          <!-- end single details card -->
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./app.js"></script>
+  </body>
+</html>
