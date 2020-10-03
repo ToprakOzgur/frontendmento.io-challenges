@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-main;
+
+  background-color: $red;
+  color: white;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  @media screen and (max-width: 700px) {
+    background-image: url(../images/bg-intro-mobile.png);
+  }
+}
+
+footer {
+  transform: translateY(-30px);
+}
+
+.hidden {
+  display: none;
+}
+
+//Extend/Inheritance
+
+%rounded-box {
+  border-radius: 10px;
+}
+
+%bottom-shadow {
+  box-shadow: 0px 6px 5px 0px rgba(0, 0, 0, 0.26);
+}

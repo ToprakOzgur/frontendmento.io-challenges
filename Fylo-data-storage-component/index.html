@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="icons">
+        <img class="logo" src="./images/logo.svg" alt="fylo" />
+        <img class="icon" src="./images/icon-document.svg" alt="document" />
+        <img class="icon" src="./images/icon-folder.svg" alt="folder" />
+        <img class="icon" src="./images/icon-upload.svg" alt="upload" />
+      </section>
+
+      <section class="display">
+        <p class="display__details" display>
+          You’ve used <span>815 GB</span> of your storage
+        </p>
+        <div class="display__slider">
+          <input
+            type="range"
+            name="slider"
+            class="slider"
+            value="81.5"
+            disabled
+          />
+        </div>
+        <div class="display__startEnd">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+
+        <p class="display__remainingGB"><span>185 GB</span> left</p>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* Primary colors */
+  --redPrimaryColor: hsl(0, 78%, 62%);
+  --cyanPrimaryColor: hsl(180, 62%, 55%);
+  --orangePrimaryColor: hsl(34, 97%, 64%);
+  --bluePrimaryColor: hsl(212, 86%, 64%);
+
+  /* Neutral colors */
+  --veryDarkBlueNeutralColor: hsl(234, 12%, 34%);
+  --grayishBlueNeutralColor: hsl(229, 6%, 66%);
+  --veryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--veryLightGray);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+.header {
+  margin: 7rem auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+.header-light {
+  font-weight: 200;
+}
+.header p {
+  margin: 2rem auto 0 auto;
+  font-weight: 200;
+  max-width: 50rem;
+}
+
+.cards {
+  display: flex;
+  margin: auto;
+  max-width: 1000px;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column {
+  flex-basis: 30%;
+}
+
+.single-card {
+  height: 20rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+
+  background-color: var(--veryLightGray);
+  border-radius: 5px;
+  border-top: 4px;
+  border-top-style: solid;
+  box-shadow: 0.2rem 0.9rem 1.4rem 0 rgba(0, 0, 0, 0.1);
+}
+.supervisor {
+  border-color: var(--cyanPrimaryColor);
+}
+.teamBuilder {
+  border-color: var(--redPrimaryColor);
+}
+.karma {
+  border-color: var(--orangePrimaryColor);
+}
+.calculator {
+  border-color: var(--bluePrimaryColor);
+}
+.single-card-title {
+  padding: 0.8rem;
+}
+.single-card-text {
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding-left: 0.8rem;
+  padding-top: 0.4rem;
+  line-height: 2rem;
+}
+.single-card-icon {
+  text-align: end;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 3rem;
+}
+.single-card-icon img {
+  height: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex-basis: 80%;
+  }
+  .cards {
+    flex-wrap: wrap;
+  }
+}

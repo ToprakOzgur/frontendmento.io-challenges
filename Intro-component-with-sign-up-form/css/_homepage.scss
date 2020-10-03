@@ -1,0 +1,131 @@
+.container {
+  padding: 0 10%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2%;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 700px) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.infoText {
+  h1 {
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 960px) {
+      font-size: 4rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+  p {
+    @media screen and (max-width: 700px) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.formArea {
+  .promoText {
+    @extend %rounded-box;
+    @extend %bottom-shadow;
+    background-color: $blue;
+    padding: 20px 40px;
+    text-align: center;
+    min-height: 56px;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 700;
+    }
+  }
+  .form-container {
+    @extend %rounded-box;
+    @extend %bottom-shadow;
+    background-color: white;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    row-gap: 20px;
+
+    &__inputWrapper {
+      position: relative;
+
+      input {
+        height: 56px;
+        @extend %rounded-box;
+        border: 2px solid hsla(0, 0%, 50%, 0.18);
+        text-indent: 20px;
+        font-weight: 600;
+        outline: none;
+
+        width: 100%;
+      }
+
+      img {
+        position: absolute;
+        right: 5%;
+        top: 15px;
+      }
+      p {
+        margin-top: 5px;
+      }
+      input:focus {
+        border: 2px solid hsla(0, 0%, 50%, 0.88);
+      }
+    }
+  }
+}
+.error-text {
+  width: 100%;
+  color: red;
+  font-size: 1rem;
+  text-align: end;
+
+  margin-top: 0;
+}
+
+button {
+  @extend %rounded-box;
+  @extend %bottom-shadow;
+  background-color: $green;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+
+  height: 56px;
+
+  cursor: pointer;
+  outline: none;
+}
+button:active {
+  background-color: lighten($color: $green, $amount: 20%);
+  border: none;
+}
+
+small {
+  color: $grayishBlue;
+  text-align: center;
+  font-size: 1rem;
+
+  span {
+    color: $red;
+    font-weight: 700;
+  }
+}

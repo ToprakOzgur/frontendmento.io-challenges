@@ -1,0 +1,148 @@
+   @import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+   /* globals */
+   :root {
+
+     /* Primary Colors */
+     --cyanPrimary: hsl(179, 62%, 43%);
+     --brightYellowPrimary: hsl(71, 73%, 54%);
+
+     /* Neutral Colors */
+     --lightGray: hsl(204, 43%, 93%);
+     --grayishBlue: #98a6bd;
+   }
+
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   html {
+     font-size: 62.5%;
+   }
+
+   body {
+     font-size: 1.6rem;
+     font-family: 'Karla', sans-serif;
+     height: 100vh;
+     background-color: var(--lightGray);
+   }
+
+   section {
+     padding: 3.5rem;
+     line-height: 2rem;
+   }
+
+   .container {
+     width: 55rem;
+     display: flex;
+     flex-wrap: wrap;
+
+
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+   }
+
+   .join {
+     flex-basis: 100%;
+     background-color: #fff;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+   }
+
+   .signUp {
+     flex-basis: 50%;
+     background-color: var(--cyanPrimary);
+     border-bottom-left-radius: 10px;
+   }
+
+   .description {
+     flex-basis: 50%;
+     background-color: hsla(179, 62%, 43%, 0.7);
+     border-bottom-right-radius: 10px;
+   }
+
+   .join-title {
+     color: var(--cyanPrimary);
+     margin-bottom: 1.3rem;
+
+   }
+
+   .join-subtitle {
+     color: var(--brightYellowPrimary);
+     margin-bottom: 1.2rem;
+     font-size: 1.4rem;
+   }
+
+   .join-text {
+     color: var(--grayishBlue);
+   }
+
+   .join-text,
+   .payment-promo,
+   .services-info {
+     font-size: 1.3rem;
+   }
+
+   .signUp,
+   .description {
+     color: #fff;
+   }
+
+   .signUp span {
+     font-size: 2rem;
+     color: #fff;
+   }
+
+   .section-title {
+     margin-bottom: 1.3rem;
+   }
+
+   .price {
+     color: var(--lightGray);
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+   }
+
+   .signUp-btn {
+     color: #fff;
+     background-color: var(--brightYellowPrimary);
+     margin: 1.5rem auto;
+     padding: 1.2rem 1rem;
+     width: 100%;
+
+     border-radius: 5px;
+     box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
+   }
+
+   @media screen and (max-width:600px) {
+
+     .container {
+       width: 90%;
+       flex-direction: column;
+     }
+
+     .join {
+       flex-basis: 100%;
+
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+     }
+
+     .signUp {
+       flex-basis: 100%;
+
+       border-bottom-left-radius: 10px;
+       border-radius: 0px;
+     }
+
+     .description {
+       flex-basis: 100%;
+
+       border-bottom-right-radius: 10px;
+       border-bottom-left-radius: 10px;
+     }
+   }

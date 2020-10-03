@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+:root {
+  --darkBlue: #202046;
+  --grayishBlue: hsl(240, 18%, 77%);
+}
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-image: url(./images/pattern-bg.svg),
+    url(./images/pattern-curve.svg), url(./images/pattern-quotes.svg);
+  background-position: 90% center, bottom left, 20% 30%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-size: 3.2rem;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  place-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  margin: 10%;
+  max-width: 1440px;
+
+  width: 90%;
+}
+
+.txtInfo {
+  align-self: center;
+  transform: translateX(100px);
+  font-weight: 300;
+  color: var(--darkBlue);
+  line-height: 4.4rem;
+  z-index: 1;
+
+  flex: 0 0 60%;
+}
+
+.txtInfo__personInfo {
+  margin-top: 30px;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.txtInfo__personInfo span {
+  color: var(--grayishBlue);
+  font-weight: 400;
+}
+.personImg {
+  position: relative;
+}
+.personImg img {
+  box-shadow: 10px 10px 18px 8px rgba(32, 32, 70, 0.09);
+  border-radius: 3px;
+}
+
+.personImg__slider {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  height: 50px;
+  width: 100px;
+  left: 10%;
+  bottom: -15px;
+  border-radius: 50px;
+}
+
+.personImg__slider button {
+  height: 100%;
+  width: 40%;
+  border: none;
+  background-color: transparent;
+}
+
+/* .person2Img {
+  display: none;
+}
+.person2Info {
+  display: none;
+} */
+
+.hidden {
+  display: none;
+}

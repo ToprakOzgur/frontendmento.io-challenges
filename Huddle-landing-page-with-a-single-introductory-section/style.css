@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --violet: hsl(257, 40%, 49%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  background-image: url(./images/bg-desktop.svg);
+  background-color: var(--violet);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.mainContainer {
+  padding: 5%;
+  height: 100%;
+}
+.container {
+  display: flex;
+
+  flex-direction: row;
+  color: #ffffff;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.illustration {
+  flex-basis: 50%;
+  flex-shrink: 0;
+  height: auto;
+}
+.illustration img {
+  width: 100%;
+}
+.text {
+  height: auto;
+  margin-left: 60px;
+}
+.title__title {
+  margin-bottom: 20px;
+}
+.text__subTitle {
+  line-height: 1.8;
+  font-size: 1.8rem;
+}
+.social {
+  font-size: 2rem;
+  color: white;
+  text-align: end;
+}
+i.fab {
+  display: inline-block;
+  border-radius: 60px;
+  border: 2px white solid;
+  width: 50px;
+  height: 50px;
+  line-height: 2.2em;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  margin-top: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  color: var(--violet);
+  font-size: 1.7rem;
+  box-shadow: 10px 10px 20px -8px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin-top: 60px;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+  }
+  .illustration {
+    text-align: center;
+    margin: 0;
+    flex-basis: auto;
+  }
+  .illustration img {
+    width: 60%;
+    margin: 0;
+  }
+  .text {
+    text-align: center;
+    margin-left: 0;
+  }
+  nav img {
+    width: 150px;
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  .social {
+    text-align: center;
+  }
+}
