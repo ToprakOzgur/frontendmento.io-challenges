@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+:root {
+  --font-body: 'Open Sans', sans-serif;
+
+  /*  Headings, Call-to-actions, Header Navigation */
+  --font-navsHeaders: 'Raleway', sans-serif;
+
+  /*  Colors */
+
+  /*  Primary */
+
+  --veryDarkBlue: hsl(243, 87%, 12%);
+  --desaturatedBlue: hsl(238, 22%, 44%);
+
+  /*  Accent */
+
+  --brightBlue: hsl(224, 93%, 58%);
+  --moderateCyan: hsl(170, 45%, 43%);
+
+  /*  Neutral */
+
+  --lightGrayishBlue: hsl(240, 75%, 98%);
+  --lightGray: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-body);
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 50px 0 50px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  min-width: 250px;
+  width: 300px;
+  justify-content: space-evenly;
+}
+.nav-links a {
+  color: var(--desaturatedBlue);
+  font-family: var(--font-navsHeaders);
+}
+
+section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 50px;
+  height: 80vh;
+}
+footer {
+  background-color: var(--veryDarkBlue);
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+
+  color: var(--lightGrayishBlue);
+}
+
+footer a {
+  color: var(--lightGrayishBlue);
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .links li {
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 3.8rem;
+
+  font-family: var(--font-navsHeaders);
+  line-height: 5rem;
+  margin-bottom: 20px;
+  color: var(--veryDarkBlue);
+}
+
+.btn {
+  background-color: var(--brightBlue);
+  border-radius: 4px;
+  border: none;
+  color: var(--lightGrayishBlue);
+  font-size: 1.4rem;
+  padding: 15px 20px;
+}
+
+.section-bottom {
+  height: 40vh;
+  background-color: var(--desaturatedBlue);
+  width: 100%;
+  margin: 0;
+  padding: 0 40px;
+  align-items: center;
+}
+.section-figure img {
+  width: 100%;
+}
+
+.section-text-details {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: var(--veryDarkBlue);
+  line-height: 1.3;
+}
+.email-up {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-up button {
+  flex-basis: 30%;
+}
+.email-text {
+  flex-basis: 50%;
+  margin-right: 30px;
+  text-indent: 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: solid 1px;
+}
+.email-text::placeholder {
+  color: var(--lightGray);
+}
+
+.how-works {
+  color: var(--moderateCyan);
+  position: relative;
+}
+.how-works::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: var(--moderateCyan);
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.testimonial {
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgb(237, 237, 237);
+  border-radius: 5px;
+  width: 350px;
+}
+.testimonial-text {
+  font-size: 1.3rem;
+  line-height: 1.9;
+}
+.person-info {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.person-info-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.person-info-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.person-info-job {
+  font-size: 1.2rem;
+}
+.section-bottom-text-title {
+  font-size: 3rem;
+  color: var(--lightGrayishBlue);
+}
+.section-bottom-text-details {
+  margin-top: 20px;
+  color: var(--lightGrayishBlue);
+  line-height: 2rem;
+}
+.email-down {
+  display: block;
+  margin-left: 20px;
+}
+.email-down button {
+  width: 50%;
+  min-width: 200px;
+  height: 50px;
+}
+.email-down input {
+  height: 50px;
+  display: block;
+  margin-bottom: 20px;
+  min-width: 200px;
+  width: 80%;
+}
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+.fylo-info-phone,
+.fylo-info-email {
+  display: flex;
+  margin-bottom: 20px;
+}
+.fylo-info-phone img,
+.fylo-info-email img {
+  margin-right: 20px;
+}
+.fylo-info > img {
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (max-width: 700px) {
+  section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  section figure {
+    width: 80vw;
+  }
+  .section-middle {
+    margin-top: 400px;
+  }
+  .testimonial {
+    margin: 30px auto;
+  }
+  .section-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    height: 50vh;
+  }
+  .section-text {
+    margin-bottom: 30px;
+  }
+  .email-down {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .email-down > * {
+    margin: 0;
+  }
+
+  footer {
+    height: 100vh;
+    flex-direction: column;
+    padding: 40px;
+    align-items: flex-start;
+  }
+  .socials {
+    align-self: center;
+  }
+}
