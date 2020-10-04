@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $body_font;
+}
+body.no-scroll {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings_font;
+  font-weight: $font_regular;
+}
+a {
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none;
+}
+.container {
+  width: 87%;
+  margin: 0 auto;
+}
+button {
+  padding: 10px 25px;
+  border: 2px solid;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: $font_bold;
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s, color 0.3s;
+  &:hover {
+    cursor: pointer;
+  }
+}
+// Desktop
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 80%;
+  }
+}
