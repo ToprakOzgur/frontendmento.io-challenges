@@ -47,10 +47,22 @@ main {
     text-transform: uppercase;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid $very-light-grayish-blue;
+    &:hover {
+      background-image: none;
+      background-color: transparent;
+      border: 1px solid $linear-gradient-start;
+      color: $linear-gradient-start;
+    }
   }
 
   &__btn:not(.blue) {
     color: $linear-gradient-start;
+    &:hover {
+      border: 1px solid $very-light-grayish-blue;
+      color: $very-light-grayish-blue;
+    }
   }
 }
 

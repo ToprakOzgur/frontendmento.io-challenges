@@ -31,7 +31,7 @@ body {
     width: 40%;
     height: 300px;
     position: absolute;
-    bottom: -50px;
+    bottom: -900px;
     left: -50px;
     background-image: url(../images/bg-bottom.svg);
     background-repeat: no-repeat;
@@ -39,6 +39,10 @@ body {
     background-size: contain;
 
     z-index: -1;
+
+    @media screen and (min-width: 960px) {
+      bottom: -50px;
+    }
   }
 }
 

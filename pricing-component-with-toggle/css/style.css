@@ -35,13 +35,19 @@ body::before {
   width: 40%;
   height: 300px;
   position: absolute;
-  bottom: -50px;
+  bottom: -900px;
   left: -50px;
   background-image: url(../images/bg-bottom.svg);
   background-repeat: no-repeat;
   background-position: bottom left;
   background-size: contain;
   z-index: -1;
+}
+
+@media screen and (min-width: 960px) {
+  body::before {
+    bottom: -50px;
+  }
 }
 
 a {
@@ -99,9 +105,9 @@ a {
   position: relative;
   width: 60px;
   height: 30px;
-  background-color: red;
   border-radius: 20px;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .toggle__switch::after {
@@ -168,10 +174,24 @@ main {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #f6f6fe;
+}
+
+.price-card__btn:hover {
+  background-image: none;
+  background-color: transparent;
+  border: 1px solid #696fdd;
+  color: #696fdd;
 }
 
 .price-card__btn:not(.blue) {
   color: #696fdd;
+}
+
+.price-card__btn:not(.blue):hover {
+  border: 1px solid #f6f6fe;
+  color: #f6f6fe;
 }
 
 .blue * {
