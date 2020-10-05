@@ -41,7 +41,7 @@ body {
     z-index: -1;
 
     @media screen and (min-width: 960px) {
-      bottom: -50px;
+      bottom: 0;
     }
   }
 }
@@ -60,4 +60,10 @@ a {
     $linear-gradient-start,
     $linear-gradient-end
   );
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    height: 100%;
+  }
 }

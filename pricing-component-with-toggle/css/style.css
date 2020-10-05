@@ -46,7 +46,7 @@ body::before {
 
 @media screen and (min-width: 960px) {
   body::before {
-    bottom: -50px;
+    bottom: 0;
   }
 }
 
@@ -61,6 +61,12 @@ a {
 .blue {
   background: -webkit-gradient(linear, right top, left top, from(#696fdd), to(#a3a8f0));
   background: linear-gradient(to left, #696fdd, #a3a8f0);
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    height: 100%;
+  }
 }
 
 .header {
