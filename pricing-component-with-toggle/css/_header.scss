@@ -1,0 +1,48 @@
+.header {
+  text-align: center;
+  margin: 80px auto;
+
+  &__title {
+    color: $dark-grayish-blue;
+  }
+}
+
+.toggle {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__selection {
+    color: $grayish-blue;
+  }
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .toggle__switch::after {
+      left: 30px;
+    }
+  }
+
+  &__switch {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border-radius: 20px;
+    margin: 0 20px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      border-radius: 50px;
+      background-color: white;
+      width: 24px;
+      height: 24px;
+      top: 3px; // TO GIVE AN EFFECT OF CIRCLE INSIDE SWITCH.
+      left: 4px;
+      transition: all 0.3s;
+    }
+  }
+}
