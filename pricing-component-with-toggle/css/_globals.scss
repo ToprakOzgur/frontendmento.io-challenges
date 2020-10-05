@@ -11,7 +11,7 @@ body {
   font-size: 1.5rem;
   font-family: $font-main;
   background-color: $very-light-grayish-blue;
-
+  overflow-x: hidden;
   &::after {
     content: '';
     width: 100%;

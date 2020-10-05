@@ -1,0 +1,95 @@
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.price-card {
+  background-color: white;
+  border-radius: 5px;
+  margin: 40px 5%;
+  padding: 40px 0;
+  text-align: center;
+  max-width: 500px;
+  width: 80%;
+
+  &__title {
+    color: $dark-grayish-blue;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    font-size: 6rem;
+    position: relative;
+    margin-bottom: 30px;
+    &::after {
+      @extend %bottom-line;
+    }
+  }
+
+  &__detail {
+    font-size: 1.6rem;
+    position: relative;
+    margin-bottom: 30px;
+    color: $grayish-blue;
+    &::after {
+      @extend %bottom-line;
+    }
+  }
+
+  &__btn {
+    width: 80%;
+    padding: 20px 20px;
+    color: $very-light-grayish-blue;
+    font-family: $font-main;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+  }
+
+  &__btn:not(.blue) {
+    color: $linear-gradient-start;
+  }
+}
+
+.blue * {
+  color: $very-light-grayish-blue;
+}
+
+//
+//
+//Extend/Inheritance
+//
+//
+%bottom-line {
+  content: '';
+  position: absolute;
+  margin: 0 10%;
+  width: 80%;
+  height: 1px;
+  background-color: $light-grayish-blue;
+
+  bottom: -15px;
+  left: 0;
+  z-index: 99;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .price-card {
+    margin: 0;
+    padding: 30px 30px;
+    width: 250px;
+  }
+  .price-card.big {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

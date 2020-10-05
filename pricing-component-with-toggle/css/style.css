@@ -13,6 +13,7 @@ body {
   font-size: 1.5rem;
   font-family: "Montserrat", sans-serif;
   background-color: #f6f6fe;
+  overflow-x: hidden;
 }
 
 body::after {
@@ -114,4 +115,101 @@ a {
   left: 4px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-card {
+  background-color: white;
+  border-radius: 5px;
+  margin: 40px 5%;
+  padding: 40px 0;
+  text-align: center;
+  max-width: 500px;
+  width: 80%;
+}
+
+.price-card__title {
+  color: #494c5f;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.price-card__price {
+  font-size: 6rem;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.price-card__detail {
+  font-size: 1.6rem;
+  position: relative;
+  margin-bottom: 30px;
+  color: #6d708d;
+}
+
+.price-card__btn {
+  width: 80%;
+  padding: 20px 20px;
+  color: #f6f6fe;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.price-card__btn:not(.blue) {
+  color: #696fdd;
+}
+
+.blue * {
+  color: #f6f6fe;
+}
+
+.price-card__price::after, .price-card__detail::after {
+  content: '';
+  position: absolute;
+  margin: 0 10%;
+  width: 80%;
+  height: 1px;
+  background-color: #b3b5c6;
+  bottom: -15px;
+  left: 0;
+  z-index: 99;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-card {
+    margin: 0;
+    padding: 30px 30px;
+    width: 250px;
+  }
+  .price-card.big {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
