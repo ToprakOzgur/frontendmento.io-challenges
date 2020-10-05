@@ -1,52 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  Our Pricing
-  Annually
-  Monthly
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Özgür Toprak</a>.
+    </div> -->
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+    <header class="header">
+      <h1 class="header__title">Our Pricing</h1>
+      <div class="toggle">
+        <p class="toggle">Annually</p>
+        <input type="checkbox" id="toggle" class="toggle__checkbox" />
+        <label for="toggle" class="toggle__switch"></label>
+        <p class="toggle__selection">Monthly</p>
+      </div>
+    </header>
+    <main>
+      <!-- single price card -->
+      <section class="price-card">
+        <h2 class="price-card__title">Basic</h2>
+        <p class="price-card__price">&dollar;19.99</p>
+        <p class="price-card-detail">500 GB Storage</p>
+        <p class="price-card-detail">2 Users Allowed</p>
+        <p class="price-card-detail">Send up to 3 GB</p>
+        <button type="submit" class="price-card__btn blue">Learn More</button>
+      </section>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+      <!-- single price card -->
+      <section class="price-card big blue">
+        <h2 class="price-card__title">Professional</h2>
+        <p class="price-card__price">&dollar;249.99</p>
+        <p class="price-card-detail">1 TB Storage</p>
+        <p class="price-card-detail">5 Users Allowed</p>
+        <p class="price-card-detail">Send up to 10 GB</p>
+        <button type="submit" class="price-card__btn">Learn More</button>
+      </section>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <!-- single price card -->
+      <section class="price-card big blue">
+        <h2 class="price-card__title">Master</h2>
+        <p class="price-card__price">&dollar;399.99</p>
+        <p class="price-card-detail">2 TB Storage</p>
+        <p class="price-card-detail">10 Users Allowed</p>
+        <p class="price-card-detail">Send up to 20 GB</p>
+        <button type="submit" class="price-card__btn blue">Learn More</button>
+      </section>
+    </main>
+  </body>
 </html>
