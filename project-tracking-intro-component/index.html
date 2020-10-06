@@ -15,15 +15,6 @@
     <title>Frontend Mentor | Project tracking intro component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <header class="header">
@@ -32,7 +23,11 @@
           <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
         </div>
         <div class="hamburger">
-          <img src="./images/icon-hamburger.svg" alt="mobile menu" />
+          <img
+            id="hamburger-img"
+            src="./images/icon-hamburger.svg"
+            alt="mobile menu"
+          />
         </div>
         <nav class="nav">
           <ul class="nav__list">
@@ -43,7 +38,7 @@
           </ul>
         </nav>
 
-        <div class="header__mobile-menu">
+        <div class="header__mobile-menu hidden">
           <ul class="nav__list">
             <li class="nav__link"><a href="#">product</a></li>
             <li class="nav__link"><a href="#">features</a></li>
@@ -86,5 +81,6 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer> -->
+    <script src="./app.js"></script>
   </body>
 </html>
