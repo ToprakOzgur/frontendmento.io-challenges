@@ -1,19 +1,299 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
 body {
-  font-size: 1.8rem;
+  text-transform: uppercase;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #eef3f6;
 }
-a {
+
+.container {
+  margin-top: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__mobile-menu {
+  display: none;
+}
+
+.header .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.header .nav {
+  width: 500px;
+  max-width: 500px;
+}
+
+.header .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-transform: uppercase;
+}
+
+.header .nav__list li:not(.login) {
+  list-style: none;
+}
+
+.header .nav__list a {
   text-decoration: none;
+  color: #242942;
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header .nav__list .login,
+.header .nav__list .login a {
+  color: #a0a1ac;
+}
+
+.header .nav__list .login {
+  padding-left: 40px;
+  margin-left: 40px;
+}
+
+.header .nav__list li:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  .header .nav {
+    display: none;
+  }
+  .header .hamburger {
+    display: block;
+  }
+  .header .header__mobile-menu {
+    display: unset;
+    border-radius: 6px;
+    position: absolute;
+    top: 100px;
+    left: 50vw;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 300px;
+    text-align: center;
+    height: auto;
+    background-color: white;
+    padding: 30px 50px;
+    -webkit-box-shadow: 0px 0px 33px -1px rgba(1, 15, 33, 0.55);
+    box-shadow: 0px 0px 33px -1px rgba(1, 15, 33, 0.55);
+  }
+  .header .header__mobile-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .header__mobile-menu ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  .header .header__mobile-menu ul .login {
+    padding-left: unset;
+    margin-left: unset;
+    margin-bottom: 0;
+    margin-top: 20px;
+    position: relative;
+  }
+  .header .header__mobile-menu ul .login::before {
+    content: '';
+    width: 250px;
+    height: 1px;
+    background-color: #a0a1ac;
+    position: absolute;
+    opacity: 50%;
+    left: -25px;
+    top: -15px;
+  }
+}
+
+.hero__header {
+  margin-bottom: 20px;
+}
+
+.hero__header p {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #a0a1ac;
+  letter-spacing: 5px;
+  font-size: 1.6rem;
+}
+
+.hero__header p span {
+  background-color: black;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding-left: 8px;
+}
+
+.hero__motto {
+  font-size: 5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-bottom: 40px;
+  color: #242942;
+}
+
+.hero__details {
+  text-transform: initial;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 60px;
+  color: #5b5f71;
+  font-size: 1.6rem;
+}
+
+.hero__demo-btn button {
+  background-color: #ff5c5c;
+  padding: 20px 40px;
+  text-transform: uppercase;
+  color: #eef3f6;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.hero__demo-btn button:hover {
+  background-color: #ff8f8f;
+}
+
+.hero__demo-btn span {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #a0a1ac;
+  letter-spacing: 5px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main .container .hero {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+main .container .devices {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+main .container .devices img {
+  width: 180%;
+  max-width: 80vw;
+  height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 10%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  main .container .hero {
+    margin-top: 100px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 100%;
+  }
+  main .container .hero__header {
+    margin-bottom: 10px;
+  }
+  main .container .hero__header p {
+    font-size: 1rem;
+  }
+  main .container .hero__motto {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  main .container .hero__details {
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+  }
+  main .container .hero__demo-btn button {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+  main .container .hero__demo-btn span {
+    letter-spacing: 2px;
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+  main .container .devices {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+  }
+  main .container .devices img {
+    width: 180%;
+    max-width: unset;
+    height: auto;
+  }
 }

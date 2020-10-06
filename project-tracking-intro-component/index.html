@@ -28,36 +28,54 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="mobile menu" />
+        </div>
         <nav class="nav">
-          <ul>
+          <ul class="nav__list">
             <li class="nav__link"><a href="#">product</a></li>
             <li class="nav__link"><a href="#">features</a></li>
             <li class="nav__link"><a href="#">pricing</a></li>
-            <li class="nav__link"><a href="#">login</a></li>
+            <li class="nav__link login"><a href="#">login</a></li>
           </ul>
         </nav>
+
+        <div class="header__mobile-menu">
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#">product</a></li>
+            <li class="nav__link"><a href="#">features</a></li>
+            <li class="nav__link"><a href="#">pricing</a></li>
+            <li class="nav__link login"><a href="#">login</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <div class="container">
         <section class="hero">
           <div class="hero__header">
-            <span>new</span>
-            <span>Monograph Dashboard</span>
+            <p><span>new</span> Monograph Dashboard</p>
           </div>
-          <h1 class="hero__title">
-            Dashboard Powerful insights into your team
+          <h1 class="hero__motto">
+            Powerful insights <br />
+            into your team
           </h1>
-          <p class="hero__details"></p>
+          <p class="hero__details">
+            Project planning and time tracking <br />
+            for agile teams
+          </p>
+          <div class="hero__demo-btn">
+            <button>Schedule a demo</button>
+            <span>to see a live preview</span>
+          </div>
         </section>
         <figure class="devices">
-          Project planning and time tracking for agile teams
+          <img src="./images/illustration-devices.svg" alt="devices image" />
         </figure>
-        <div class="hero__demo-btn">
-          <button>Schedule a demo</button>
-          <span>to see a live preview</span>
-        </div>
+        <div class="background"></div>
       </div>
     </main>
     <!-- <footer>
