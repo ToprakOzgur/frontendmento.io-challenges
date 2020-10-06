@@ -8,13 +8,27 @@
 
 body {
   text-transform: uppercase;
-  height: 100vh;
   overflow-x: hidden;
-  background-color: $light-grayish-blue;
+
+  &:after {
+    content: '';
+    background-color: $grayish-blue;
+    opacity: 15%;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: -50vh;
+    right: -50vw;
+    z-index: -1;
+    border-radius: 130px;
+  }
 }
 
 .container {
   margin-top: 5%;
   margin-left: 12%;
   margin-right: 12%;
+}
+.hidden {
+  display: none;
 }
