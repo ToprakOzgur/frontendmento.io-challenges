@@ -1,39 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Project tracking intro component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Product
-  Features
-  Pricing
-  Login
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="#"><img src="./images/logo.svg" alt="logo" /></a>
+        </div>
+        <div class="hamburger">
+          <img src="./images/icon-hamburger.svg" alt="mobile menu" />
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#">product</a></li>
+            <li class="nav__link"><a href="#">features</a></li>
+            <li class="nav__link"><a href="#">pricing</a></li>
+            <li class="nav__link login"><a href="#">login</a></li>
+          </ul>
+        </nav>
 
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+        <div class="header__mobile-menu">
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#">product</a></li>
+            <li class="nav__link"><a href="#">features</a></li>
+            <li class="nav__link"><a href="#">pricing</a></li>
+            <li class="nav__link login"><a href="#">login</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="hero">
+          <div class="hero__header">
+            <p><span>new</span> Monograph Dashboard</p>
+          </div>
+          <h1 class="hero__motto">
+            Powerful insights <br />
+            into your team
+          </h1>
+          <p class="hero__details">
+            Project planning and time tracking <br />
+            for agile teams
+          </p>
+          <div class="hero__demo-btn">
+            <button>Schedule a demo</button>
+            <span>to see a live preview</span>
+          </div>
+        </section>
+        <figure class="devices">
+          <img src="./images/illustration-devices.svg" alt="devices image" />
+        </figure>
+        <div class="background"></div>
+      </div>
+    </main>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
 </html>
