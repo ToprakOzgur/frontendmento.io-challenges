@@ -1,0 +1,21 @@
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  padding: 120px 10% 50px 10%;
+  text-align: center;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
