@@ -13,9 +13,78 @@ body {
   font-size: 1.8rem;
   padding: 120px 10% 50px 10%;
   text-align: center;
+  font-family: $font-main;
+  background: url(../images/bg-header-desktop.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
 }
-
+section {
+  margin-bottom: 160px;
+}
 a,
 a:visited {
   text-decoration: none;
+}
+li {
+  list-style: none;
+}
+h1 {
+  font-size: 4.2rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+//page globals
+.section__title,
+.article__title {
+  color: $dark-grayish-blue;
+}
+.section__details,
+.article__details {
+  color: $grayish-blue;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 3rem;
+}
+.section__title {
+  margin-bottom: 30px;
+}
+.article__title {
+  margin-bottom: 20px;
+}
+.article__details {
+  margin-bottom: 50px;
+}
+.btn-green {
+  @extend %btn;
+  background-color: $strong-cyan;
+  -webkit-box-shadow: 5px 5px 20px -2px rgba(38, 186, 164, 0.31);
+  -moz-box-shadow: 5px 5px 20px -2px rgba(38, 186, 164, 0.31);
+  box-shadow: 5px 5px 20px -2px rgba(38, 186, 164, 0.31);
+  &:hover {
+    background-color: lighten($strong-cyan, 5%);
+  }
+}
+.btn-blue {
+  @extend %btn;
+  background-color: $light-blue;
+  -webkit-box-shadow: 5px 5px 20px -2px rgba(97, 115, 255, 0.4);
+  -moz-box-shadow: 5px 5px 20px -2px rgba(97, 115, 255, 0.4);
+  box-shadow: 5px 5px 20px -2px rgba(97, 115, 255, 0.4);
+  &:hover {
+    background-color: lighten($light-blue, 5%);
+  }
+}
+//Extend/Inheritance
+%btn {
+  width: 225px;
+  height: 50px;
+  border-radius: 100px;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
