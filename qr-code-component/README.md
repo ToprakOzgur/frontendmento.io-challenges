@@ -19,8 +19,8 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Challenge URL: [Add live site URL here](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
+- [Solution URL](https://eager-villani-5a06dd.netlify.app/)
+- [Challenge URL](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)
 
 ### Built with
 
