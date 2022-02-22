@@ -140,13 +140,7 @@ hr {
     margin-bottom: var(--margin-bottom);
 }
 
-.card .attribution {
-    font-size: 11px;
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
+
 
 .card__creator {
     display: flex;
@@ -176,6 +170,14 @@ hr {
     color: var(--color-cyan);
     cursor: pointer;
 
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
 }
 
 .attribution a {
