@@ -13,7 +13,7 @@ This is a solution to the [Order summary component](https://www.frontendmentor.i
 ### Links
 
 - [Solution URL:](https://github.com/ToprakOzgur/frontendmento.io-challenges/tree/main/order-summary-component)
-- [Live Site URL:](https://awesome-carson-4c9fc6.netlify.app/)
+- [Live Site URL:](https://gallant-volhard-2db3f5.netlify.app/)
 
 
 
