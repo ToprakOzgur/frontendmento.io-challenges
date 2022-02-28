@@ -49,7 +49,7 @@ img {
     height: min(60vh, 50rem);
     overflow: hidden;
     width: 45rem;
-
+    box-shadow: 4px 4px var(--color-neutral-dark-gray);
 
 }
 
@@ -130,11 +130,25 @@ li p {
     font-size: 11px;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 100%;
 
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Screen reader class to hide the content visually */
+.sr-only {
+    position: absolute !important;
+    margin: -1px !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
 }
