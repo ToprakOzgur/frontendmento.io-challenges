@@ -12,8 +12,8 @@ This is a solution to the [Order summary component](https://www.frontendmentor.i
 
 ### Links
 
-- [Solution URL:](https://github.com/ToprakOzgur/frontendmento.io-challenges/tree/main/order-summary-component)
-- [Live Site URL:](https://gallant-volhard-2db3f5.netlify.app/)
+- [Solution URL:](https://github.com/ToprakOzgur/frontendmento.io-challenges/tree/main/profile-card-component)
+- [Live Site URL:](https://adoring-fermi-4e936a.netlify.app/)
 
 
 

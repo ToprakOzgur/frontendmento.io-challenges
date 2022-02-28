@@ -49,7 +49,6 @@ img {
     height: min(60vh, 50rem);
     overflow: hidden;
     width: 45rem;
-    box-shadow: 4px 4px var(--color-neutral-dark-gray);
 
 }
 
