@@ -13,7 +13,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 ### Links
 
 - [Solution URL:](https://github.com/ToprakOzgur/frontendmento.io-challenges/tree/main/stats-preview-card-component)
-- [Live Site URL:](https://gallant-volhard-2db3f5.netlify.app/)
+- [Live Site URL:](https://clever-mcclintock-6b3b2d.netlify.app/)
 
 
 
