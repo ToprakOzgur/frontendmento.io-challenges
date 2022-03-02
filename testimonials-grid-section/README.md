@@ -13,7 +13,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - [Solution URL:](https://github.com/ToprakOzgur/frontendmento.io-challenges/tree/main/testimonials-grid-section)
-- [Live Site URL:](https://clever-mcclintock-6b3b2d.netlify.app/)
+- [Live Site URL:](https://nostalgic-colden-e8e72a.netlify.app/)
 
 
 
