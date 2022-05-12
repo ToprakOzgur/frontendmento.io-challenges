@@ -1,8 +1,13 @@
 import React, { createContext, useMemo, useReducer } from "react";
 import Calculator from "./components/Calculator";
 
-const initialState = { value: 0, currentOperator: (a, b) => a, displayValue: 0 };
-
+const initialState = {
+  accumulator: 0,
+  currentOperator: null,
+  displayValue: "0",
+  isInTheMiddleOfTyping: false,
+  operand: 0,
+};
 export const ACTIONS = {
   INPUT: "input",
   ADD: "add",
@@ -13,25 +18,56 @@ export const ACTIONS = {
   RESET: "reset",
   RESULT: "result",
 };
+
+function performOperation(newOperation, state) {
+  if (state.currentOperator) {
+    const result = state.currentOperator(parseFloat(state.operand), parseFloat(state.displayValue));
+    return {
+      accumulator: result,
+      currentOperator: newOperation,
+      displayValue: "" + result,
+      isInTheMiddleOfTyping: false,
+      operand: result,
+    };
+  }
+  return {
+    ...state,
+    currentOperator: newOperation,
+    isInTheMiddleOfTyping: false,
+    operand: state.displayValue,
+  };
+}
+
 function reducer(state, action) {
   switch (action.type) {
     case "input":
-      return { ...state, displayValue: (state.displayValue + action.payload).toString() };
-    // return { ...state, displayValue: state.displayValue === 0 ? "" + action.payload : "" + state.displayValue + action.payload };
+      if (state.isInTheMiddleOfTyping) {
+        return {
+          ...state,
+          displayValue: "" + state.displayValue + action.payload,
+        };
+      } else {
+        return {
+          ...state,
+          displayValue: action.payload,
+          isInTheMiddleOfTyping: true,
+        };
+      }
+
     case "add":
-      return { ...state, currentOperator: (a, b) => a + b };
+      return performOperation((a, b) => a + b, state);
     case "subtract":
-      return { ...state, currentOperator: (a, b) => a - b };
+      return performOperation((a, b) => a - b, state);
     case "multiply":
-      return { ...state, currentOperator: (a, b) => a * b };
+      return performOperation((a, b) => a * b, state);
     case "divide":
-      return { ...state, currentOperator: (a, b) => a / b };
+      return performOperation((a, b) => a / b, state);
     case "delete":
-      return { ...state, currentOperator: (a, b) => a, displayValue: 0 };
+      return { ...state, displayValue: "0", isInTheMiddleOfTyping: false };
     case "reset":
       return { ...initialState };
     case "result":
-      return { state: state.currentOperator(state.value, action.payload), currentOperator: (a) => a, displayValue: state.value };
+      return performOperation(null, state);
     default:
       return state;
   }
