@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Montserrat&display=swap");
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --bright-blue: hsl(220, 98%, 61%);
+  --background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* ### Neutral */
+
+  /* ### Light Theme */
+
+  --very-light-gray: hsl(0, 0%, 98%);
+  --very-light-grayish-blue: hsl(236, 33%, 92%);
+  --light-grayish-blue: hsl(233, 11%, 84%);
+  --dark-grayish-blue: hsl(236, 9%, 61%);
+  --very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --very-dark-blue: hsl(235, 21%, 11%);
+  --very-dark-desaturated-blue: hsl(235, 24%, 19%);
+  --light-grayish-blue: hsl(234, 39%, 85%);
+  --light-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-grayish-blue: hsl(234, 11%, 52%);
+  --very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --very-dark-grayish-blue: hsl(237, 14%, 26%);
+
+  --background: var(--very-light-gray);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  background-image: url(./images/bg-desktop-light.jpg);
+  background-repeat: no-repeat;
+}
+main {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+article {
+  width: min(100% - 6rem, 50rem);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+.themeButton {
+  cursor: pointer;
+  background-color: blue;
+}
+
+h1 {
+  color: white;
+}
+/* dark theme */
+body.black {
+  background-image: url(./images/bg-desktop-dark.jpg);
+}
+body.black h1 {
+  color: black;
+}
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--dark-grayish-blue);
+}
+.newTodo {
+  margin-bottom: 2rem;
+  background-color: var(--very-light-gray);
+  box-shadow: 5px 5px 20px var(--light-grayish-blue);
+  border-radius: 2rem;
+}
+.newTodo input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background-color: var(--very-light-gray);
+  box-shadow: 5px 5px 20px var(--light-grayish-blue);
+  border: none;
+}
+.todo {
+  border-radius: 1rem;
+  background-color: var(--very-light-gray);
+  box-shadow: 5px 5px 20px var(--light-grayish-blue);
+}
+.singleTodo {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--light-grayish-blue);
+  padding: 1.5rem;
+}
